@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <math.h>
-#define LOG std::cout << "Hello World!\n";
+#define LOG(x) std::cout << x <<endl;
 using namespace std;
 
 void update(int* a, int* b)
@@ -32,7 +32,6 @@ int main()
 	update(ptr_a, ptr_b);
 
 	cout << "a = " << a << endl << "b = " << b << endl;
-	
-	LOG;
+
 	return 0;
 }
