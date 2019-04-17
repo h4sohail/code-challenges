@@ -1,0 +1,1 @@
+My solutions to various programming related challenges found online, in a book, or made up by myself.
