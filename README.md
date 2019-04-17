@@ -1,2 +1,2 @@
 # C++
-Collection of my C++ code snippets I have written for ssignments, quizes or online challenges etc.
+Collection of my C++ code that I have written for assignments, quizes or online challenges etc.
