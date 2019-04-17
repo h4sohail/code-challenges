@@ -1,7 +1,7 @@
-// Question from hackerrank.com
-// The function void update(int* a, int* b) 
-// reads two integers as the arguments, and returns 'a'  
-// with their sum, and 'b' with their absolute difference.
+// The function update(int* a, int* b) reads two
+// integers as the arguments, and sets the value of 'a'
+// with their sum, and the value of 'b' with their 
+// absolute difference.
 // a = a + b
 // b = |a - b|
 
@@ -34,4 +34,5 @@ int main()
 	cout << "a = " << a << endl << "b = " << b << endl;
 	
 	LOG;
+	return 0;
 }
