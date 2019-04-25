@@ -1,5 +1,5 @@
 // The function update(int* a, int* b) reads two
-// integers as the arguments, and sets the value of 'a'
+// int pointers as the arguments, and sets the value of 'a'
 // with their sum, and the value of 'b' with their 
 // absolute difference.
 // a = a + b
@@ -7,7 +7,6 @@
 
 #include <iostream>
 #include <math.h>
-#define LOG(x) std::cout << x <<endl;
 using namespace std;
 
 void update(int* a, int* b)
