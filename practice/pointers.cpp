@@ -16,18 +16,19 @@ void update(int* a, int* b)
 	*b = abs(a_val - b_val);
 }
 
-int main()
+void main()
 {
 	int a, b;
 
-	std::cout << "Please enter the value for a: " << std::endl;
+	std::cout << "Please enter the value for a: ";
 	std::cin >> a;
-	std::cout << "Please enter the value for b: " << std::endl;
+	std::cout << "Please enter the value for b: ";
 	std::cin >> b;
 
 	update(&a, &b);
 
 	std::cout << "a = " << a << std::endl << "b = " << b << std::endl;
-
-	return 0;
+	
+	std::system("pause");
+	std::exit(0);
 }
