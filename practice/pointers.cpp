@@ -6,13 +6,12 @@
 // b = |a - b|
 
 #include <iostream>
-#include <math.h>
-using namespace std;
+#include <cmath>
 
 void update(int* a, int* b)
 {
-	int a_val = *a;
-	int b_val = *b;
+	const int a_val = *a;
+	const int b_val = *b;
 	*a = a_val + b_val;
 	*b = abs(a_val - b_val);
 }
@@ -20,17 +19,15 @@ void update(int* a, int* b)
 int main()
 {
 	int a, b;
-	int* ptr_a = &a;
-	int* ptr_b = &b;
 
-	cout << "Please enter the value for a: " << endl;
-	cin >> a;
-	cout << "Please enter the value for b: " << endl;
-	cin >> b;
+	std::cout << "Please enter the value for a: " << std::endl;
+	std::cin >> a;
+	std::cout << "Please enter the value for b: " << std::endl;
+	std::cin >> b;
 
-	update(ptr_a, ptr_b);
+	update(&a, &b);
 
-	cout << "a = " << a << endl << "b = " << b << endl;
+	std::cout << "a = " << a << std::endl << "b = " << b << std::endl;
 
 	return 0;
 }
