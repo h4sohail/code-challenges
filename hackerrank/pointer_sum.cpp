@@ -10,7 +10,6 @@
 #include <cmath>
 
 void update(int*, int*);
-int main(int, int);
 
 void update(int* a, int* b)
 {
