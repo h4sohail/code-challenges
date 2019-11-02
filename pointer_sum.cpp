@@ -7,8 +7,17 @@
 // a = a + b
 // b = |a - b|
 
+// max(int a, int b)
+// Takes two int numbers as the arguments, and returns 
+// the the greater number.
+
+// min(int a, int b)
+// Takes two int numbers as the arguments, and returns 
+// the the smaller number.
+
 void update(int*, int*); // update function prototype
-int abs(int,int); // abs function prototype
+int max(int, int); // max function prototype
+int min(int, int); // min funciton protoype
 
 int main() {
 	int a, b;
@@ -31,9 +40,13 @@ void update(int* a, int* b) {
 	const int a_val = *a;
 	const int b_val = *b;
 	*a = a_val + b_val;
-	*b = abs(a_val - b_val);
+	*b = max(a_val, b_val) - min(a_val, b_val);
 }
 
-int abs(int a, int b) {
+int max(int a, int b) {
 	return a > b ? a : b;
+}
+
+int min(int a, int b) {
+	return a > b ? b : a;
 }
