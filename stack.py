@@ -10,7 +10,7 @@ class Stack():
         else: 
             return False
     
-    def push(self, item):
+    def push_back(self, item):
         self.stack.append(item)
     
     def pop(self):
@@ -23,10 +23,10 @@ class Stack():
         return len(self.stack)
 
 stack = Stack()
-print('is empty?: ', stack.is_empty())
-stack.push(1)
-print('is empty?: ', stack.is_empty())
-print('peek: ', stack.peek())
-print('size: ', stack.size())
-print('pop: ', stack.pop())
-print('is empty?: ', stack.is_empty()) 
+print('is empty?:', stack.is_empty())
+stack.push_back(1)
+print('is empty?:', stack.is_empty())
+print('peek:', stack.peek())
+print('size:', stack.size())
+print('pop:', stack.pop())
+print('is empty?:', stack.is_empty()) 
