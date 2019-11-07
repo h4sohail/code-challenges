@@ -20,6 +20,7 @@ class DynamicArray():
             self._resize(2*self.capacity)
         self.array[self.size] = ele
         self.size += 1
+        
     def _resize(self, new_cap):
         temp_array = self.make_array(new_cap)
 
