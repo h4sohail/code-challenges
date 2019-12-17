@@ -10,4 +10,4 @@ def k_largest(lst, k):
         if counter == k:
             return lst[-k] 
 
-print(k_largest(lst, k))    
+print(k_largest(lst, k))
